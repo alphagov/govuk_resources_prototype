@@ -1,4 +1,4 @@
-# GOV.UK Platform prototypes
+# GOV.UK Resources prototypes
 
 ## Requirements
 
