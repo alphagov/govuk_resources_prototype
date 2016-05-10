@@ -1,0 +1,24 @@
+// Styles specific to prototypes
+
+
+// Nested numbered lists for site map
+ol.list-nested { 
+  counter-reset: item; 
+  margin-bottom: 0;
+  padding-left: 0;
+  > li { 
+    display: block 
+  }
+  > li:before { 
+    content: counters(item, ".") " "; 
+    counter-increment: item ;
+    margin-right: 15px;
+    color: $secondary-text-colour;
+  }
+}
+
+// Hash links don't go purple when you click them
+a[href="#"]:visited,
+a.no-visited:visited{
+  color: $link-colour;
+}

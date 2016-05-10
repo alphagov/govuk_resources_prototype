@@ -1,0 +1,84 @@
+{% extends "layout-with-search.html" %}
+
+{% block page_title %}
+  Design resources
+{% endblock %}
+
+{% import "includes/macros.html" as macro %}
+
+{% block content %}
+
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol role="breadcrumbs">
+      <li><a href="/resources">Home</a></li>
+      <li>Products</li>
+    </ol>
+  </div>
+
+  <h1 class="heading-xlarge">
+    Products
+  </h1>
+
+<div class="grid-row">
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/products/govuk-publisher">GOV.UK Publisher</a>
+      </h2>
+
+      <p>Publish information on GOV.UK</p>
+
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/products/govuk-verify">GOV.UK Verify</a>
+      </h2>
+
+      <p>Check that your users are who they say they are</p>
+
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/products/govuk-pay">GOV.UK Pay</a>
+      </h2>
+
+      <p>Take payments from your users</p>
+
+    </div>
+
+  </div>
+  <div class="grid-row">
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/products/govuk-notify">GOV.UK Notify</a>
+      </h2>
+
+      <p>Keep you users informed with emails, text message and by post</p>
+
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/products/govuk-hosting">GOV.UK Hosting</a>
+      </h2>
+
+      <p>Cloud hosting for small to medium volume services.</p>
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}
+
+

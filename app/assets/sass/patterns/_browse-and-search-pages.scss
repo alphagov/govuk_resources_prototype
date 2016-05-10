@@ -1,0 +1,54 @@
+// Section index page
+
+.section-description{
+  margin-bottom: 0
+}
+
+.browse-item{
+  .heading-medium{
+    margin-top: $gutter;
+  }
+}
+
+.browse-items,
+.search-items{
+
+  .browse-item,
+  .search-item{
+    margin-top: $gutter-half;
+    h3{
+      @include bold-19();
+      margin-top: 0;
+      margin-bottom: 10px;
+      a{
+        text-decoration: none;
+      }
+    }
+    .language{
+      color: $secondary-text-colour;
+      @include core-14;
+      margin-top: 2px;
+      float: right;
+    }
+    p{
+      @include core-16; 
+      margin: 0;
+    }
+    .publisher{
+      color: $secondary-text-colour;
+      //@include core-14;
+      a{
+        color: $secondary-text-colour;
+        &:hover{
+          color: $text-colour
+        }
+      }
+    }
+  }
+}
+
+.search-items .search-item{
+  h3{
+    @include bold-24;
+  }
+}

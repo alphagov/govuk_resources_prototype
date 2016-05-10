@@ -1,0 +1,11 @@
+// Automatically numbered H2 headings
+
+body {
+    counter-reset: h2counter;
+}
+
+h2.heading-numbered:before {
+    content: counter(h2counter) ".";
+    counter-increment: h2counter;
+    margin-right: 15px;
+}

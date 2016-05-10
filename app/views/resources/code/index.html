@@ -1,0 +1,86 @@
+{% extends "layout-with-search.html" %}
+
+{% block page_title %}
+  Code
+{% endblock %}
+
+{% import "includes/macros.html" as macro %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol role="breadcrumbs">
+      <li><a href="/resources">Home</a></li>
+      <li>Code</li>
+    </ol>
+  </div>
+
+  <h1 class="heading-xlarge">Code</h1>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <p class="lede">
+        <a href="/resources/code/search" class="bold-medium">Browse our collection</a> 
+        of open source code and apps.
+        Written by government, for government.
+      </p>
+
+    </div>
+
+<!--
+    <div class="column-one-quarter">
+      <span class="stat">237</span> apps
+    </div>
+    <div class="column-one-quarter">
+      <span class="stat">3,498</span> downloads
+    </div>
+  -->
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Most popular
+  </h2>
+
+  <div class="browse-items grid-row">
+    {% include "includes/code-browse-popular.html" %}
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Recently updated
+  </h2>
+
+  <div class="browse-items grid-row">
+    {% include "includes/code-browse-recent.html" %}
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Get involved
+  </h2>
+
+
+  <div class="grid-row">
+    <div class="column-third">
+      <a href="#">Submit your code</a>
+    </div>
+    <div class="column-third">
+      <a href="#">Tutorials and training</a>
+    </div>
+    <div class="column-third">
+      
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+

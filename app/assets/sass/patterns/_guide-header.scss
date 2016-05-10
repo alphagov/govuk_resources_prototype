@@ -1,0 +1,70 @@
+// GUIDE HEADER
+
+.guide-header{
+  background: #005ea5;
+  padding: 45px 30px 30px 30px;
+  margin-bottom: 75px;
+  color: $white;
+
+  .heading-secondary{
+    color: $white;
+  }
+
+  a{
+    color: $white;
+  }
+
+  h2{
+    font-weight: bold;
+  }
+
+  .headings{
+    overflow: hidden;
+    p{     
+      margin: 15px 0 20px;
+    }
+    .document-type{
+      margin: 75px 0 10px;
+      font-size: 27px;
+      line-height: 1.11111111;
+    }
+  }
+
+  .in-page-navigation{
+
+    ol.list-number {
+      counter-reset: item;
+      padding-left: 0;
+    }
+
+    ol > li {
+      padding: 0 0 0 1.5em;
+      text-indent: -1.5em;
+      list-style-type: none;
+      counter-increment: item;
+
+      a{
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    ol > li:before {
+      display: inline-block;
+      width: 1.5em;
+      padding-right: 0.5em;
+      font-weight: bold;
+      text-align: right;
+      content: counter(item) ".";
+    }
+
+    li.no-number:before{
+      content: "-";
+    }
+
+
+  }
+
+}

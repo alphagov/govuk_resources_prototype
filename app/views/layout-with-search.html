@@ -1,0 +1,18 @@
+{% extends "govuk_template.html" %}
+
+{% set global_header_text = "GOV.UK Resources" %}
+
+{% block head %}
+  {% include "includes/head.html" %}
+{% endblock %}
+
+{% block inside_header %}
+{% include "includes/search.html" %}
+{% endblock %}
+
+{% block header_class %}
+{% endblock %}
+
+{% block body_end %}
+  {% include "includes/scripts.html" %}
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "layout-with-search.html" %}
+
+{% block page_title %}
+  Data
+{% endblock %}
+
+{% import "includes/macros.html" as macro %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol role="breadcrumbs">
+      <li><a href="/resources">Home</a></li>
+      <li>Data</li>
+    </ol>
+  </div>
+
+  <h1 class="heading-xlarge">Data</h1>
+
+      <p class="lede section-description">
+        <a href="/resources/data/search" class="bold-medium">Browse government data sets and registers</a>
+      </p> 
+
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Most popular
+  </h2>
+
+  <div class="browse-items grid-row">
+    {% include "includes/data-browse-popular.html" %}
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Recently updated
+  </h2>
+
+  <div class="browse-items grid-row">
+    {% include "includes/data-browse-recent.html" %}
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Get involved
+  </h2>
+
+
+  <div class="grid-row">
+    <div class="column-third">
+      <a href="#">Connect your data</a>
+    </div>
+    <div class="column-third">
+      <a href="#">Tutorials and training</a>
+    </div>
+    <div class="column-third">
+      
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}
+
+

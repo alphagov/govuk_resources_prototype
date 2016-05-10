@@ -1,0 +1,48 @@
+{% extends "layout-with-search.html" %}
+
+{% block body_classes %}pattern-page{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol role="breadcrumbs">
+      <li><a href="/resources">Home</a></li>
+      <li><a href="/resources/products">Products</a></li>
+      <li>{{ page_title }}</li>
+    </ol>
+  </div>
+
+  <header class="guide-header">
+    <div class="inner-block floated-children">
+
+      <div class="headings">
+        <h1 class="heading-xlarge">
+          <span class="heading-secondary">Product</span>
+          {{ page_title }}
+        </h1>
+      </div>
+
+      <nav class="in-page-navigation">
+
+        <h2>Contents</h2>
+
+        <ol class="list list-number">
+          {% block page_contents %}
+
+          {% endblock %}
+        </ol>
+
+      </nav>
+    </div>
+  </header>
+
+  {% block content_pattern %}
+
+  {% endblock %}
+
+</main>
+
+{% endblock %}
+

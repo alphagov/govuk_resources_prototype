@@ -1,0 +1,87 @@
+{% extends "layout-pattern.html" %}
+
+{% set page_title = "Check your answers page" %}
+
+{% block page_contents %}
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#guidance">Guidance</a></li>
+  <li><a href="#accessibility">Accessibility</a></li>
+  <li><a href="#security">Security</a></li>
+  <li><a href="#research">Research</a></li>
+{% endblock %}
+
+{% block content_pattern %}
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+  <p class="lede">Play information back to users before they submit it.</p>
+
+
+      <h2 id="introduction" class="heading-large heading-numbered">Introduction</h2>
+
+
+      <p>By letting people check their answers you can:</p>
+
+      <ul class="list list-bullet">
+        <li><strong>increase completion rates</strong> – users are reassured that the correct data has been captured so are less likely to drop out of the transaction before completing it</li>
+        <li><strong>reduce error rates</strong> – users are given a second chance to spot and correct errors before submitting the data</li>
+      </ul>
+
+      <div class="tabs tabs-code">
+        <h3>Code</h3>
+        <div>
+          <p>There’s a <a href="http://govuk-prototype-kit.herokuapp.com/examples/check-your-answers-page">coded example of this page</a> in the <a href="https://github.com/alphagov/govuk_prototype_kit">GOV.UK Prototype Kit</a>.</p>
+        </div>
+      </div>
+
+      <div class="example">
+        <a href="/resources/design/patterns/check-your-answers-page/example">
+          <img class="image-thumb" src="/public/images/check-your-answers-page.png" alt="An example of a check your answers page">
+        </a>
+      </div>
+      <br>
+
+      <h2 id="guidance" class="heading-large heading-numbered">Guidance</h2>
+
+      <p>Make it clear that there is a task to perform on this page and that the transaction is not complete until they confirm that the information is correct.</p>
+
+      <p>Provide links back to the pages containing information they can change. The user should be returned to the ‘Check your answers’ page once they’ve updated the information (and any other questions triggered by their updated response).</p>
+
+      <p>Don’t just write the questions and answers out as they were originally given. Reword them for this particular format and context. For example, the individual elements of an address do not need labelling, and long questions can often be rewritten as shorter statements.</p>
+
+      <p>The submit button should fully state the action it performs, eg ‘Change your tax details’ or ‘Send your claim form’. You don’t need an explicit declaration checkbox as long as it’s made clear what will happen.</p>
+
+      <h2 id="accessibility" class="heading-large heading-numbered">Accessibility</h2>
+
+      <p>Use the 'visually-hidden' class to add hidden text to the ‘Change’ links, so that they make sense when read out of context by screen readers.</p>
+
+      <p>For example:<p>
+      
+<pre><code class="language-markup"><a href="#">
+  Change <span class="visuallyhidden">Producer name</span>
+</a>
+</code></pre>
+
+      <h2 id="security" class="heading-large heading-numbered">Security</h2>
+
+      <p>These pages play back information entered by your users. In some cases you might need to obfuscate parts of the data to reduce the risk that it’s read by the wrong people.</p>
+
+      <p>Each service is different. Work with your security team to make sure that there’s an acceptable level of risk.</p>
+
+      <h2 id="research" class="heading-large heading-numbered">Research</h2>
+
+      <p>You can help improve this pattern by researching the following:</p>
+
+      <ul class="list list-bullet">
+        <li>what effect does the wording, styling and position of the ‘Change’ links have on their usage?</li>
+        <li>for long, multi-section transactions, do people need one of these pages at the end of each section, or just at the end of the whole transaction?</li>
+      </ul>
+
+      <p>Update the discussion below with your findings.</p>
+
+    </div>
+  </div>
+
+{% endblock %}

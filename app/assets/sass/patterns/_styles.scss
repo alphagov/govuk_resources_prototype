@@ -1,0 +1,16 @@
+// STYLES
+// Additional contents styles for all pages
+
+// Thick horizontal keylines
+hr{
+  border: 5px solid #0b0c0c;
+  border-width: 5px 0 0;
+  height: 0;
+  margin-top: 40px;
+}
+
+
+// extra space in header for the site name
+#global-header .header-wrapper .header-global .header-logo{
+ width: 66.66%;
+}

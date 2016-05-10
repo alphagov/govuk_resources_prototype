@@ -1,0 +1,35 @@
+// GOV.UK front end toolkit dependencies
+@import "colours";
+@import "shims";
+@import "measurements";
+@import "typography";
+@import "css3";
+@import "url-helpers";
+@import "grid_layout";
+
+// Prototype meta styles
+@import 'patterns/prototype';
+
+// Styles
+@import 'patterns/styles';
+
+// Patterns
+@import 'patterns/homepage-header';
+@import 'patterns/search-filters';
+@import 'patterns/examples';
+@import 'patterns/tabs';
+@import 'patterns/discussion';
+@import 'patterns/numbered-guidelines';
+@import 'patterns/user-journey';
+@import 'patterns/guide-header';
+@import 'patterns/full-width';
+@import 'patterns/search-in-header';
+@import 'patterns/related-links';
+@import 'patterns/numbered-headings';
+@import 'patterns/follow-links';
+
+// Pages
+@import 'patterns/check-your-answers-page';
+@import 'patterns/style-guide-page';
+@import 'patterns/browse-and-search-pages';
+@import 'patterns/unbranded-page';

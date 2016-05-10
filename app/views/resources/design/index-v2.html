@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block body_classes %}full-width-header{% endblock %}
+
+{% block page_title %}
+  Resources for service teams
+{% endblock %}
+
+{% set global_header_text = "GOV.UK Design Resources" %}
+
+{% block content %}
+
+<div class="full-width-container">
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <p>
+        Everything a team needs to design <br>
+        <span class="bold-medium">simpler, clearer, faster</span> public services
+      </p>
+
+      <form id="header-search" class="site-search" action="/search" method="get" role="search">
+        <div class="header-search-content">
+          <label for="search-main">Search for design resources</label>
+          <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<main id="content" role="main">
+
+<div class="grid-row">
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/design/principles">Design principles</a>
+      </h2>
+
+      <p>10 principles for designing user centred public services</p>
+
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/design/patterns">Design patterns</a>
+      </h2>
+
+      <p>Service patterns, interaction patterns and design guides</p>
+
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/design/patterns">Prototype kit</a>
+      </h2>
+
+      <p>Make HTML prototypes using GOV.UK styles and patterns</p>
+
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/design/content-style-guide">Content style guide</a>
+      </h2>
+
+      <p>Create content with a consistent style and tone of voice</p>
+
+    </div>
+
+    <div class="column-third">
+
+      <h2 class="heading-medium">
+        <a href="/resources/design/front-end-style-guide">Front end style guide</a>
+      </h2>
+
+      <p>Grids, typography, colours, forms, icons, tables, pages and more</p>
+
+    </div>
+
+  </div>
+
+<hr>
+
+
+</main>
+
+{% endblock %}
+
+

@@ -1,0 +1,124 @@
+{% extends "layout-with-search.html" %}
+
+{% block head %}
+{{ super() }}
+<link href="/public/stylesheets/prism-default.css" media="screen" rel="stylesheet">
+{% endblock %}
+
+{% block body_classes %}pattern-page{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+
+  <p class="follow-guide">
+    <a href="#">Follow this guide</a>
+  </p>
+
+  <div class="breadcrumbs">
+    <ol role="breadcrumbs">
+      <li><a href="/resources">Home</a></li>
+      <li><a href="/resources/design">Design</a></li>
+      <li><a href="/resources/design/patterns">Design patterns</a></li>
+      <li>{{ page_title }}</li>
+    </ol>
+  </div>
+
+  <header class="guide-header">
+    <div class="inner-block floated-children">
+
+      <div class="headings">
+        <h1 class="heading-xlarge">
+          <span class="heading-secondary">Design pattern</span>
+          {{ page_title }}</h1>
+
+          <ul class="list">
+            <li>Last updated: {{ page_updated | default('26 April 2016') }}</li>
+            <li>Status: {{ page_status | default('Under discussion') }}</li>
+          </ul>
+      </div>
+
+      <nav class="in-page-navigation">
+
+        <h2>Contents</h2>
+
+        <ol class="list list-number">
+          {% block page_contents %}
+
+          {% endblock %}
+          <li class="no-number"><a href="#discussion">Discussion</a></li>
+        </ol>
+
+      </nav>
+    </div>
+  </header>
+
+  {% block content_pattern %}
+
+  {% endblock %}
+
+  {% block page_discussion %}
+  <hr>
+
+  <p class="follow-discussion">
+    <a href="#">Follow this discussion</a>
+  </p>
+
+  <h2 id="discussion" class="heading-xlarge">
+  Discussion
+  </h2>
+
+  <p>
+    Contribute to the development of this guidance by discussing it here.
+  </p>
+  <br>
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <div class="edit-controls">
+        <ul>
+          <li><a href="#">Edit</a></li>
+        </ul>
+      </div>
+      <div class="discussion" contenteditable=true>
+          {% block page_discussion_editable_area %}
+          Edit this text to start the discussion
+          {% endblock %}
+      </div>
+
+    </div>
+    <div class="column-third font-xsmall">
+
+      <br>
+      <p class="text-secondary">
+        This is not formal Cabinet Office guidance.
+        All views expressed here are those of the individual contributors. 
+      </p>
+
+      <p><a href="#">Contribution guidelines</a></p>
+
+      {% block page_discussion_meta %}
+      {% endblock %}
+
+    </div>
+
+  </div>
+  {% endblock %}
+
+</main>
+
+{% endblock %}
+
+{% block body_end %}
+{{ super() }}
+<script src="/public/javascripts/jquery.accTabs.js"></script>
+<script>
+  $(function() {
+    $('.tabs-code').accTabs({ defaultTab: 100 });
+  });
+</script>
+{% endblock %}
+

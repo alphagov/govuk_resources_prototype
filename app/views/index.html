@@ -1,0 +1,94 @@
+{% extends "layout_unbranded.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <span class="heading-secondary">Prototype</span>
+        GOV.UK Resources
+      </h1>
+
+      <p>Prototypes for testing resources for teams building digital public services.</p>
+
+      <h3 class="heading-medium">
+        Site map
+      </h3>
+
+      <ol class="list font-xsmall">
+        <li>
+          <p>
+            <a href="/resources" class="bold-xsmall">Home page</a>
+          </p>
+          <ol class="list list-number list-nested">
+            <li>
+              <a href="/resources/design">Design</a>
+              <ol class="list list-number list-nested">
+                <li><a href="/resources/design/principles">Design principles</a></li>
+                <li><a href="/resources/design/style-guide">Style guide</a></li>
+                <li>
+                  <a href="/resources/design/patterns">Design patterns</a>
+                  <ol class="list list-number list-nested">
+                    <li><a href="/resources/design/patterns/check-your-answers-page">Check your answers page</a></li>
+                    <li><a href="/resources/design/patterns/dates-and-times">Dates and times</a></li>
+                    <li><a href="/resources/design/patterns/tabs">Tabs</a></li>
+                    <li><a href="/resources/design/patterns/simple-transaction">Simple transaction</a></li>
+                    <li><a href="/resources/design/patterns/save-and-return">Save and return</a></li>
+                    <li><a href="/resources/design/patterns/telephone-support">Telephone support</a></li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <a href="/resources/code">Code</a>
+              <ol class="list list-number list-nested">
+                <li><a href="/resources/code/search">Search and browse</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="/resources/data">Data</a>
+              <ol class="list list-number list-nested">
+                <li><a href="/resources/data/search">Search and browse</a></li>
+              </ol>
+            </li>
+            <li>
+              <a href="/resources/components">Components</a>
+            </li>
+          </ol>
+        </li>
+      </ol>
+
+
+      <h3 class="heading-medium">
+        Discussions
+      </h3>
+
+      <p>These pages show the discussion functionality in various states.</p>
+
+      <ol class="list list-bullet font-xsmall">
+        <li><a href="/resources/design/patterns/telephone-support">Telephone support</a>
+          - no guidance, no discussion
+        </li>
+        <li>
+          <a href="/resources/design/patterns/check-your-answers-page">Check your answers page</a>
+          - some guidance, no discussion
+        </li>
+        <li>
+          <a href="/resources/design/patterns/dates-and-times">Dates and times</a>
+          - some guidance, some discussion
+        </li>
+      </ol>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+

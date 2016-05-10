@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose install where, deps [ '/Users/timpaul/code/govuk_platform_prototypes',
+4 verbose install   [ 'basic-auth',
+4 verbose install     'basic-auth-connect',
+4 verbose install     'body-parser',
+4 verbose install     'consolidate',
+4 verbose install     'cfenv',
+4 verbose install     'express',
+4 verbose install     'express-nunjucks',
+4 verbose install     'express-writer',
+4 verbose install     'govuk-elements-sass',
+4 verbose install     'govuk_frontend_toolkit',
+4 verbose install     'govuk_template_mustache',
+4 verbose install     'grunt',
+4 verbose install     'grunt-cli',
+4 verbose install     'grunt-concurrent',
+4 verbose install     'grunt-contrib-clean',
+4 verbose install     'grunt-contrib-copy',
+4 verbose install     'grunt-contrib-watch',
+4 verbose install     'grunt-nodemon',
+4 verbose install     'grunt-sass',
+4 verbose install     'hogan.js',
+4 verbose install     'minimist',
+4 verbose install     'napa',
+4 verbose install     'readdir',
+4 verbose install     'serve-favicon' ] ]
+5 verbose install where, peers [ '/Users/timpaul/code/govuk_platform_prototypes', [] ]
+6 info preinstall express-prototype@2.0.0
+7 verbose already installed skipping govuk_frontend_toolkit@^4.6.0 /Users/timpaul/code/govuk_platform_prototypes
+8 verbose already installed skipping govuk_template_mustache@^0.16.0 /Users/timpaul/code/govuk_platform_prototypes
+9 verbose already installed skipping grunt@0.4.5 /Users/timpaul/code/govuk_platform_prototypes
+10 verbose already installed skipping grunt-cli@0.1.13 /Users/timpaul/code/govuk_platform_prototypes
+11 verbose already installed skipping grunt-concurrent@0.4.3 /Users/timpaul/code/govuk_platform_prototypes
+12 verbose already installed skipping grunt-contrib-clean@0.5.0 /Users/timpaul/code/govuk_platform_prototypes
+13 verbose already installed skipping grunt-contrib-copy@0.5.0 /Users/timpaul/code/govuk_platform_prototypes
+14 verbose already installed skipping grunt-contrib-watch@0.5.3 /Users/timpaul/code/govuk_platform_prototypes
+15 verbose already installed skipping grunt-nodemon@0.4.0 /Users/timpaul/code/govuk_platform_prototypes
+16 verbose already installed skipping grunt-sass@^1.1.0 /Users/timpaul/code/govuk_platform_prototypes
+17 verbose already installed skipping hogan.js@3.0.2 /Users/timpaul/code/govuk_platform_prototypes
+18 verbose already installed skipping minimist@0.0.8 /Users/timpaul/code/govuk_platform_prototypes
+19 verbose already installed skipping napa@^2.2.0 /Users/timpaul/code/govuk_platform_prototypes
+20 verbose already installed skipping readdir@0.0.6 /Users/timpaul/code/govuk_platform_prototypes
+21 verbose already installed skipping serve-favicon@2.3.0 /Users/timpaul/code/govuk_platform_prototypes
+22 verbose already installed skipping basic-auth@^1.0.3 /Users/timpaul/code/govuk_platform_prototypes
+23 verbose already installed skipping basic-auth-connect@^1.0.0 /Users/timpaul/code/govuk_platform_prototypes
+24 verbose already installed skipping body-parser@^1.14.1 /Users/timpaul/code/govuk_platform_prototypes
+25 verbose already installed skipping consolidate@0.x /Users/timpaul/code/govuk_platform_prototypes
+26 verbose already installed skipping cfenv@* /Users/timpaul/code/govuk_platform_prototypes
+27 verbose already installed skipping express@4.13.3 /Users/timpaul/code/govuk_platform_prototypes
+28 verbose already installed skipping express-nunjucks@^0.9.3 /Users/timpaul/code/govuk_platform_prototypes
+29 verbose already installed skipping express-writer@0.0.4 /Users/timpaul/code/govuk_platform_prototypes
+30 silly cache add args [ 'govuk-elements-sass@git+https://github.com/alphagov/govuk_elements#v1.1.1',
+30 silly cache add   null ]
+31 verbose cache add spec govuk-elements-sass@git+https://github.com/alphagov/govuk_elements#v1.1.1
+32 silly cache add parsed spec { raw: 'govuk-elements-sass@git+https://github.com/alphagov/govuk_elements#v1.1.1',
+32 silly cache add   scope: null,
+32 silly cache add   name: 'govuk-elements-sass',
+32 silly cache add   rawSpec: 'git+https://github.com/alphagov/govuk_elements#v1.1.1',
+32 silly cache add   spec: 'git+ssh://git@github.com/alphagov/govuk_elements.git#v1.1.1',
+32 silly cache add   type: 'hosted',
+32 silly cache add   hosted:
+32 silly cache add    { type: 'github',
+32 silly cache add      ssh: 'git@github.com:alphagov/govuk_elements.git#v1.1.1',
+32 silly cache add      sshUrl: 'git+ssh://git@github.com/alphagov/govuk_elements.git#v1.1.1',
+32 silly cache add      httpsUrl: 'https://github.com/alphagov/govuk_elements.git#v1.1.1',
+32 silly cache add      directUrl: 'https://raw.githubusercontent.com/alphagov/govuk_elements/v1.1.1/package.json' } }
+33 info maybeGithub Attempting git+https://github.com/alphagov/govuk_elements#v1.1.1 from git://github.com/alphagov/govuk_elements.git#v1.1.1
+34 verbose addRemoteGit git-github-com-alphagov-govuk-elements-git-205446c2 not in flight; caching
+35 info git [ 'config', '--get', 'remote.origin.url' ]
+36 verbose addRemoteGit remote.origin.url: git://github.com/alphagov/govuk_elements.git
+37 verbose addRemoteGit updating existing cached remote /Users/timpaul/.npm/_git-remotes/git-github-com-alphagov-govuk-elements-git-205446c2
+38 info git [ 'fetch', '-a', 'origin' ]
+39 error git fetch -a origin
+40 error git fetch -a origin (git://github.com/alphagov/govuk_elements.git) fatal: Unable to look up github.com (port 9418) (nodename nor servname provided, or not known)
+41 info maybeGithub Couldn't clone git://github.com/alphagov/govuk_elements.git#v1.1.1
+42 info maybeGithub Now attempting git+https://github.com/alphagov/govuk_elements#v1.1.1 from git@github.com:alphagov/govuk_elements.git#v1.1.1
+43 verbose addRemoteGit git-github-com-alphagov-govuk-elements-git-0b6f3a6b not in flight; caching
+44 info git [ 'config', '--get', 'remote.origin.url' ]
+45 verbose addRemoteGit remote.origin.url: git@github.com:alphagov/govuk_elements.git
+46 verbose addRemoteGit updating existing cached remote /Users/timpaul/.npm/_git-remotes/git-github-com-alphagov-govuk-elements-git-0b6f3a6b
+47 info git [ 'fetch', '-a', 'origin' ]
+48 error git fetch -a origin
+49 error git fetch -a origin (git@github.com:alphagov/govuk_elements.git) ssh: Could not resolve hostname github.com: nodename nor servname provided, or not known
+49 error git fetch -a origin (git@github.com:alphagov/govuk_elements.git) fatal: Could not read from remote repository.
+49 error git fetch -a origin (git@github.com:alphagov/govuk_elements.git)
+49 error git fetch -a origin (git@github.com:alphagov/govuk_elements.git) Please make sure you have the correct access rights
+49 error git fetch -a origin (git@github.com:alphagov/govuk_elements.git) and the repository exists.
+50 verbose stack Error: Command failed: git fetch -a origin
+50 verbose stack ssh: Could not resolve hostname github.com: nodename nor servname provided, or not known
+50 verbose stack fatal: Could not read from remote repository.
+50 verbose stack
+50 verbose stack Please make sure you have the correct access rights
+50 verbose stack and the repository exists.
+50 verbose stack
+50 verbose stack     at ChildProcess.exithandler (child_process.js:751:12)
+50 verbose stack     at ChildProcess.emit (events.js:110:17)
+50 verbose stack     at maybeClose (child_process.js:1015:16)
+50 verbose stack     at Socket.<anonymous> (child_process.js:1183:11)
+50 verbose stack     at Socket.emit (events.js:107:17)
+50 verbose stack     at Pipe.close (net.js:485:12)
+51 verbose cwd /Users/timpaul/code/govuk_platform_prototypes
+52 error Darwin 14.5.0
+53 error argv "node" "/usr/local/bin/npm" "install"
+54 error node v0.12.2
+55 error npm  v2.7.4
+56 error code 128
+57 error Command failed: git fetch -a origin
+57 error ssh: Could not resolve hostname github.com: nodename nor servname provided, or not known
+57 error fatal: Could not read from remote repository.
+57 error
+57 error Please make sure you have the correct access rights
+57 error and the repository exists.
+58 error If you need help, you may report this error at:
+58 error     <https://github.com/npm/npm/issues>
+59 verbose exit [ 1, true ]

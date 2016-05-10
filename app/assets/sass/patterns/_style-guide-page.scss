@@ -1,0 +1,27 @@
+// Style for style guide page
+
+.style-guide-navigation{
+
+  //margin-top: 120px;
+	margin-right: $gutter;
+	padding-right: 0;
+	width: 200px;   
+  padding-left: 15px;
+  float: left;
+
+	ol{
+		border-top: 1px solid $border-colour;
+		margin-bottom: $gutter;
+
+	}
+
+	li{
+		a{
+			border-bottom: 1px solid $border-colour;
+			text-decoration: none;
+			display: block;
+			padding: 5px 0;
+		}
+
+	}
+}

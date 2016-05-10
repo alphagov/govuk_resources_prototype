@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+
+{% block body_classes %}full-width-header{% endblock %}
+
+{% block page_title %}
+  Resources for service teams
+{% endblock %}
+
+{% block content %}
+
+<div class="full-width-container">
+
+  <div class="grid-row">
+
+    <div class="column-two-thirds">
+
+      <p>
+        Everything a team needs to build <br>
+        <span class="bold-medium">simpler, clearer, faster</span> public services
+      </p>
+
+      <form id="header-search" class="site-search" action="/search" method="get" role="search">
+        <div class="header-search-content">
+          <label for="search-main">Search for resources</label>
+          <input type="search" name="q" id="search-main" title="Search" class="js-search-focus"><input class="submit" type="submit" value="Search">
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</div>
+
+<main id="content" role="main">
+
+  <div class="grid-row">
+
+
+
+    <div class="column-one-quarter">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/resources/design" class="no-visited">Design</a>
+        </h3>
+
+        <p>Style guides, patterns <br>and page templates</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="column-one-quarter">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/resources/products" class="no-visited">Products</a>
+        </h3>
+        <p>Payments, hosting, SMS, email and identity</p>
+      </div>
+
+    </div>
+
+    <div class="column-one-quarter">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/resources/code" class="no-visited">Code</a>
+        </h3>
+        <p>Open source libraries, apps and software</p>
+      </div>
+
+    </div>
+
+    <div class="column-one-quarter">
+
+      <div class="browse-item">
+        <h3 class="heading-medium">
+          <a href="/resources/data" class="no-visited">Data</a>
+        </h3>
+        <p>Government data sets, registers and APIs</p>
+      </div>
+
+    </div>
+
+
+  </div>
+
+<hr>
+
+
+</main>
+
+{% endblock %}
+
+

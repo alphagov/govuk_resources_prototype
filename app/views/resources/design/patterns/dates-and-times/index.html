@@ -1,0 +1,198 @@
+{% extends "layout-pattern.html" %}
+
+{% set page_title = "Dates and times" %}
+
+{% block page_contents %}
+  <li><a href="#memorable-dates">Memorable dates</a></li>
+  <li><a href="#periodic-dates">Periodic dates</a></li>
+  <li><a href="#calendars">Calendars</a></li>
+{% endblock %}
+
+{% block content_pattern %}
+
+  <h2 id="memorable-dates" class="heading-large heading-numbered">
+    Memorable dates
+  </h2>
+
+  <div class="text">
+    <p>For capturing memorable dates like dates of birth, the simplest option is to provide text fields for users to type the date in.</p>
+  </div>
+
+
+  <div class="tabs tabs-code">
+    <h3>Code</h3>
+    <div>
+      <pre>
+        <code class="language-markup">
+  <!-- Add this to your Sass file: @import "elements/forms/form-date"; -->
+
+  {% include "includes/patterns/date-of-birth.html" %}
+        </code>
+      </pre>
+    </div>
+  </div>
+
+
+  <div class="example">
+  {% include "includes/patterns/date-of-birth.html" %}
+  </div>
+
+
+  <div class="text">
+    <p>Calendar controls are not particularly useful for known dates and some users struggle with select boxes. We recommend using three fields as it's easier to reliably validate than a single field.</p>
+
+    <p>Don't automatically tab between fields, as this can be unexpected behaviour that clashes with normal keyboard controls, and confuses users.</p>
+
+    <p>Tip: If you want to trigger the num-pad on iPhones, add a pattern attribute to the input element like this: pattern="[0-9]*"</p>
+  </div>
+
+  <h2 id="periodic-dates" class="heading-large heading-numbered">
+  Periodic dates
+  </h2>
+
+  <p class="text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+  </p>
+
+  <h2 id="calendars" class="heading-large heading-numbered">
+  Calendars
+  </h2>
+
+  <p class="text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+  </p>
+
+  <h2 id="research" class="heading-large heading-numbered">
+  Research
+  </h2>
+
+  <p class="text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+  </p>
+
+{% endblock %}
+
+
+{% block page_discussion_editable_area %}
+<div class="comment author-3">
+  <p class="author"><a href="#">Joe L</a></p>
+
+  <h2 class="heading-medium">Date parsing</h2>
+
+  <p>One of our design principles is "do the hard work to make it simple". When asking for dates, we should be able to accept any format of non-ambiguous dates. For example, in a month field, we should be able to accept any of these to mean February, without any validation errors:</p>
+  
+  <ul class="list list-bullet">
+    <li>2</li>
+    <li>02</li>
+    <li>Feb</li>
+    <li>February</li>
+  </ul>
+
+</div>
+
+<div class="comment quote author-1">
+  <p class="author"><a href="#">Joe L</a></p>
+  <p class="quote-text">
+    As a general rule, shall we recommend liberal parsing of dates? For example, accepting all of 02, 2, Feb, February without validation errors.
+  </p>
+</div>
+
+<div class="comment quote author-2">
+  <p class="author"><a href="#">Tim P</a></p>
+  <p class="quote-text">
+    I think so. If we could offer the code to do it even better...
+  </p>
+</div>
+
+<div class="comment quote author-3">
+  <p class="author"><a href="#">Ed H</a></p>
+  <p class="quote-text">
+    Passports can probably share some of what we're using. My concern with liberal parsing is the increased risk where there's ambiguity. Feb is unambiguous, but a year of 14 is *somewhat* ambiguous.
+  </p>
+</div>
+
+<div class="comment quote author-1">
+  <p class="author"><a href="#">Joe L</a></p>
+  <p class="quote-text">
+    yeh I think we can give guidance on the non ambiguous cases, and suggest looking into ambiguous ones?
+  </p>
+</div>
+
+<div class="comment quote author-4">
+  <p class="author"><a href="#">Jeremy A</a></p>
+  <p class="quote-text">
+    If we are accepting more than just month numbers, are we also going to look at "1st", "2nd", "3rd" or "eighth"? This could also hold true for the day box.
+  </p>
+</div>
+
+<div class="comment quote author-3">
+  <p class="author"><a href="#">Ed H</a></p>
+  <p class="quote-text">
+    <a href="#">Jeremy Anderson</a> no reason we couldn't, but I've not observed any users entering digits like this.
+  </p>
+</div>
+
+<div class="comment quote author-4">
+  <p class="author"><a href="#">Jeremy A</a></p>
+  <p class="quote-text">
+    That's okay. One of the problems with going out of our way to cope with users' possible responses is it is hard to know when to stop! At the same time, case switching means that adding extra response handling would require very little work.
+  </p>
+</div>
+
+<div class="comment quote author-2">
+  <p class="author"><a href="#">Tim P</a></p>
+  <p class="quote-text">
+    A reason for accepting months as words is that some people (including myself) struggle to remember the numbers of the months! Obviously, there's no equivalent problem for days, so allowing 'th' and 'nd' doesn't help anyone
+  </p>
+</div>
+
+<div class="comment quote author-5">
+  <p class="author"><a href="#">Lee C</a></p>
+  <p class="quote-text">
+    What is the opinion on auto tabbing between fields for memorable dates? I've had a requirement to implement this but I'm concerned the users will not be able to anticipate the forced auto tab
+  </p>
+</div>
+
+<div class="comment quote author-3">
+  <p class="author"><a href="#">Ed H</a></p>
+  <p class="quote-text">
+   <a href="#">Lee Crossley</a> we avoid doing it. I believe it is bad for accessibility ( Tom Byers can confirm). It can reduce usability for users who are not expecting it. It also makes it harder to correct errors. The user need is to support people filling in the form, not filling it in *faster*.
+  </p>
+</div>
+
+<div class="comment quote author-5">
+  <p class="author"><a href="#">Lee C</a></p>
+  <p class="quote-text">
+    Thanks Ed, I agree.
+  </p>
+</div>
+
+<div class="comment quote author-1">
+  <p class="author"><a href="#">Joe L</a></p>
+  <p class="quote-text">
+    agree with Ed - this is something that mid or high skill users often ask for, but can be confusing for other users.
+  </p>
+</div>
+
+{% endblock %}
+
+
+{% block page_discussion_meta %}
+<h3 class="bold-xsmall">Contributors</h3>
+
+<p class="font-xsmall">        
+  <a href="#">Joe L</a>, 
+  <a href="#">Lee C</a>, 
+  <a href="#">Ed H</a>,
+  <a href="#">Jeremy A</a>,
+  <a href="#">Tim P</a>
+</p>
+
+<h3 class="bold-xsmall">Last updated</h3>
+
+
+<ul class="list">
+<li>4 minutes ago</li>
+<li><a href="#">Edit history</a></li>
+</ul>
+{% endblock %}

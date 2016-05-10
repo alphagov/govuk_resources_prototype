@@ -1,0 +1,100 @@
+// DISCUSSION
+
+// Styles for a discussion page
+
+.discussion{
+
+  min-height: 400px;
+  @include core-16;
+
+  padding: 15px 10px;
+  border: 1px solid $border-colour;
+  //border-left: 5px solid $grey-3;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .author{
+    margin-top: 0;
+    visibility: hidden;
+    @include core-14;
+    position: absolute;
+    display: block;
+    width: 200px;
+    left: -215px;
+    text-align: right;
+  }
+
+  .comment{
+    position: relative;
+    border-left: 5px solid transparent;
+    padding-left: 15px;
+    margin-left: -15px;
+  }
+
+  .quote{
+    .quote-text{
+      //color: $secondary-text-colour;
+      font-style: italic;
+    }
+    .author{
+      visibility: visible;
+    }
+    &.comment{
+      margin-left: 90px;
+      border-left: 3px solid $grey-3;
+    }
+  }
+
+  // Author colours
+
+  &:hover{
+    border: 1px solid $black;
+  }
+
+  &:focus{
+    outline: none;
+    border: 1px solid $black;
+    //outline: 1px solid $grey-3;
+    //background: $highlight-colour;
+
+    .author{
+      visibility: visible; 
+    }
+    .author-1{
+      border-color: $orange ;
+      .author a{
+        color: $orange;
+      }
+    }
+    .author-2{
+      border-color: $green ;
+      .author a{
+        color: $green;
+      }
+    }
+    .author-3{
+      border-color: $mauve ;    
+      .author a{
+        color: $mauve;
+      }
+    }
+  }
+
+}
+
+.edit-controls{
+  border: 1px solid $border-colour;
+  border-bottom: 0;
+  padding: 10px;
+  font-size: 14px;
+  ul{
+    @extend %contain-floats;
+    li{
+      float: right;
+    }
+  }
+}
+
+
