@@ -1,0 +1,351 @@
+{% extends "layout-with-search.html" %}
+
+{% block page_title %}
+  Design patterns
+{% endblock %}
+
+{% import "includes/macros.html" as macro %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <p class="follow-guide">
+    <a href="#">Follow this page</a>
+  </p>
+
+  <div class="breadcrumbs">
+    <ol role="breadcrumbs">
+      <li><a href="/service-manual">Service Manual</a></li>
+      <li><a href="/service-manual/design">Design</a></li>
+      <li>Design patterns</li>
+    </ol>
+  </div>
+
+  <h1 class="heading-xlarge">
+    <span class="heading-secondary">Design</span>
+    Patterns
+  </h1>
+
+  <div class="metadata">
+    <dl>
+        <dt>Published by:</dt>
+          <dd>
+            <a href="/service-manual/communities/user-research-community">Design community</a>
+          </dd>
+      <dt>Last updated:</dt>
+      <dd>
+        5 days ago
+      </dd>
+    </dl>
+  </div>
+
+  <br><br>
+
+<!--
+  {{ macro.patternList({
+
+  category: "form",
+  patterns: [
+    {
+      name: "Label",
+      category: "form"
+    },
+    {
+      name: "Text field",
+      category: "form"
+    },
+    {
+      name: "Radio button",
+      category: "form"
+    },
+    {
+      name: "Video",
+      category: "content"
+    }
+  ]
+        
+  })}}
+-->
+
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Content and navigation
+  </h2>
+
+  <p class="bold-small"><a href="#">Writing for services</a></p>
+
+  <div class="grid-row font-xsmall">
+    <div class="column-third">
+
+      <ul class="list">  
+        <li><a href="/service-manual/design/patterns/">
+          Headings</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Paragraphs</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Links</a></li> 
+        <li><a href="/service-manual/design/patterns/">
+          Lists</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Data</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Tables</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Images</a></li>
+      </ul>
+
+    </div>
+    <div class="column-third">
+
+      <ul class="list">  
+        <li><a href="/service-manual/design/patterns/">
+          Icons</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Video</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Tabs</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Accordions</a></li> 
+        <li><a href="/service-manual/design/patterns/">
+          File upload</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          File download</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Show-hide</a></li>
+        <li><a href="/service-manual/design/patterns/">
+      </ul>
+
+    </div>
+    <div class="column-third">
+
+      <ul class="list">  
+        <li><a href="/service-manual/design/patterns/">
+          Help text</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Breadcrumbs</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Side navigation</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Back links</a></li> 
+        <li><a href="/service-manual/design/patterns/">
+          Pagination</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Page links</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Progress indicator</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Forms
+  </h2>
+
+  <p class="bold-small"><a href="#">Structuring forms</a></p>
+
+  <div class="grid-row font-xsmall">
+    <div class="column-third">
+
+      <ul class="list">
+        <li><a href="/service-manual/design/patterns/">
+          Buttons</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Checkboxes</a></li> 
+        <li><a href="/service-manual/design/patterns/">
+          Errors and validation</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Form labels</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Radio buttons</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Select boxes</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Text fields</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Type-ahead</a></li>
+      </ul>
+    </div>
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/service-manual/design/patterns/">
+          Addresses</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Businesses</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Contact preferences</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Countries</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Credit card details</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Dates</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Email addresses</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Gender and sex</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Health conditions</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Money</a></li>
+        </ul>
+    </div>
+    <div class="column-third">     
+      <ul class="list">
+        <li><a href="/service-manual/design/patterns/">
+          National Insurance numbers</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Numbers</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Names</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Passports</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Passwords</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Postcodes</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Reference numbers</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Telephone numbers</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Times</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Usernames</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Pages
+  </h2>
+
+
+  <p class="bold-small"><a href="#">Page layout</a></p>
+
+  <div class="grid-row font-xsmall">
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/resources/design/patterns/default-template">Page header</a></li>
+        <li><a href="/resources/design/patterns/default-template">Page footer</a></li>
+        <li><a href="/resources/design/patterns/start-page">Start page</a></li>
+        <li><a href="/resources/design/patterns/question-page">Question page</a></li>
+        <li><a href="/resources/design/patterns/check-your-answers-page">Check your answers page</a></li>
+      </ul>
+    </div>
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/resources/design/patterns/confirmation-page">Confirmation page</a></li>
+        <li><a href="/resources/design/patterns/overview-page">Overview page</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Error page</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Terms and conditions page</a></li>
+      </ul>
+    </div>
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/resources/design/patterns/confirmation-page">Data protection page</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Guide page</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Browse page</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Search results page</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    User accounts and identity
+  </h2>
+
+  <div class="grid-row font-xsmall">
+
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/resources/design/patterns/confirmation-page">Register</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Sign in</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Sign out</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Verifying identity</a></li>
+      </ul>
+    </div>
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/resources/design/patterns/confirmation-page">Account recovery</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Email verification</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">2 factor authorisation</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Portals</a></li>
+      </ul>
+    </div>
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/resources/design/patterns/confirmation-page">Digital signatures</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Knowledge-based authentication</a></li>
+        <li><a href="/resources/design/patterns/confirmation-page">Save and return</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">
+    Transactions
+  </h2>
+
+  <div class="grid-row font-xsmall">
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/service-manual/design/patterns/">
+          Transaction structure</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Apply for something</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Book an appointment</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Pay for something</a></li>
+      </ul>
+    </div>
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/service-manual/design/patterns/">
+          Case management</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Content publishing</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Service administration</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Reporting</a></li>
+      </ul>
+    </div>
+    <div class="column-third">
+      <ul class="list">
+        <li><a href="/service-manual/design/patterns/">
+          Email</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          SMS</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Telephone</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Print</a></li>
+        <li><a href="/service-manual/design/patterns/">
+          Web chat</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <h2 class="heading-medium">Can't find what you want?</h2>
+
+  <p class="bold-small"><a href="#">Propose a new pattern<a></p>
+
+</main>
+
+{% endblock %}
+
+

@@ -2,6 +2,19 @@
 
 
 
+{% macro patternList(i) %}
+
+<ul>
+  {% for pattern in i.patterns %}
+  	{% if pattern.category == i.category or i.category == null %}
+	  <li><a href="#">{{ pattern.name }}</a></li>
+	{% endif %}
+  {% endfor %}
+</ul>
+
+{% endmacro %}
+
+
 {# Code search results list #}
 
 {% macro codeSearch(i) %}

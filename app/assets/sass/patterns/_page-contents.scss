@@ -1,0 +1,45 @@
+// PAGE CONTENTS
+
+.page-contents{
+    margin-top: 2em;
+}
+
+.page-contents__title{	
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.page-contents__list{
+	li{
+    	font-size: 16px;
+    	line-height: 1.25;
+    	font-weight: 400;
+	    text-transform: none;
+	    list-style-type: none;
+	    margin-bottom: 5px;
+	    margin-left: 15px;
+	    padding-right: 15px;
+	    &:before{
+	    	content: "–";
+    		float: left;
+    		display: block;
+    		width: 15px;
+    		margin-left: -15px;
+	    }
+	}
+	a{
+    	text-decoration: none;
+	}
+}
+
+.page-contents__list--numbered{
+
+    li{
+        list-style-type: decimal;
+        &:before{
+            display: none;
+        }
+    }
+}

@@ -1,16 +1,19 @@
 {% extends "govuk_template.html" %}
 
-{% set global_header_text = "GOV.UK Resources" %}
+{% set global_header_text = "GOV.UK" %}
 
 {% block head %}
   {% include "includes/head.html" %}
 {% endblock %}
 
 {% block inside_header %}
+<a href="/platform" class="proposition">Service Manual</a>
+
 {% include "includes/search.html" %}
 {% endblock %}
 
 {% block header_class %}
+  with-search-and-proposition
 {% endblock %}
 
 {% block body_end %}
